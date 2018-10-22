@@ -9,13 +9,36 @@
         tools:showIn="@layout/activity_main"
         tools:context=".MainActivity">
 
-    <TextView
+    <Button
+            android:text="@string/profButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Hello World!"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
-
+            android:id="@+id/button" app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="52dp"
+            android:layout_marginBottom="92dp" app:layout_constraintBottom_toBottomOf="parent"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="Name"
+            android:ems="10"
+            android:id="@+id/editName" android:layout_marginTop="52dp"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginStart="16dp"
+            app:layout_constraintStart_toStartOf="parent"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editVorname" android:layout_marginTop="36dp"
+            app:layout_constraintTop_toBottomOf="@+id/editName" android:layout_marginStart="16dp"
+            app:layout_constraintStart_toStartOf="parent" android:hint="Vorname"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editAlter" android:layout_marginTop="36dp"
+            app:layout_constraintTop_toBottomOf="@+id/editVorname" android:layout_marginStart="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:hint="@string/profAlter"/>
 </android.support.constraint.ConstraintLayout>
