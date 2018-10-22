@@ -4,4 +4,5 @@
     <string name="action_settings">Einstellungen</string>
     <string name="profAlter">alter</string>
     <string name="profButton">Schaltfläche</string>
+    <string name="mainActivityWelcomeMsg">Hallo, herzlich Willkommmen!</string>
 </resources>
